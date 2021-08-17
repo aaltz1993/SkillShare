@@ -1,30 +1,28 @@
-### SkillShare Copy
+# SkillShare 카피 프로젝트
 
-
+  
 
 ### youtube
-
 [video1](https://www.youtube.com/watch?v=N2Rs-Njy0DI)
-
 [video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)  
-
+  
 
 
 ### Stack
 
-Language: Java, JavaScript
+- Language: Java, JavaScript
 
-OS : Android
+- OS : Android
 
-Server: nodeJs
+- Server: nodeJs
 
-Server Framework: Express
+- Server Framework: Express
 
-DB: MongoDB  
+- DB: MongoDB  
 
   
 
-### Library
+## Library
 
 #### Layout
 
@@ -64,9 +62,10 @@ DB: MongoDB
 
 - lambda
 
-  
 
-### Issues
+
+
+## Issues
 
 #### Launch Screen
 
