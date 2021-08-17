@@ -6,7 +6,7 @@
 
 [video1](https://www.youtube.com/watch?v=N2Rs-Njy0DI)
 
-[video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)
+[video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)  
 
 
 
@@ -20,9 +20,9 @@ Server: nodeJs
 
 Server Framework: Express
 
-DB: MongoDB
+DB: MongoDB  
 
-
+  
 
 ### Library
 
@@ -64,7 +64,7 @@ DB: MongoDB
 
 - lambda
 
-
+  
 
 ### Issues
 
@@ -74,7 +74,7 @@ DB: MongoDB
 #### _issue_
 
 - 자동로그인
-- gif 재생
+- gif 재생  
 
 
 
@@ -129,7 +129,7 @@ Glide.with(this)
 		.into((ImageView) findViewById(R.id.splash_image));
 ```
 
-
+  
 
 #### Login Screen
 
@@ -143,7 +143,7 @@ Glide.with(this)
 - 로그인에 필요한 로직
 - Google Sign-in
 
-
+  
 
 #### _How to solve?_
 
