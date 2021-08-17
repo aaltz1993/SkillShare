@@ -1,9 +1,11 @@
-# Skillshare 카피 프로젝트
+### Skillshare 카피 프로젝트
 
   
 
-### youtube
+### Videos
 [video1](https://www.youtube.com/watch?v=N2Rs-Njy0DI)
+
+
 [video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)  
   
 
@@ -20,9 +22,9 @@
 
 - DB: MongoDB  
 
-  
+--------------  
 
-## Library
+### Library
 
 #### Layout
 
@@ -62,10 +64,10 @@
 
 - lambda
 
+--------------
 
 
-
-## Issues
+### Issues
 
 #### Launch Screen
 
