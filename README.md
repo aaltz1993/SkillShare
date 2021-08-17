@@ -1,11 +1,10 @@
 
-### Skillshare 카피 프로젝트
+## Skillshare 카피 프로젝트
 
 ### Videos
 
 - [video1](https://www.youtube.com/watch?v=N2Rs-Njy0DI)
 - [video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)  
-<br/>
 
 ### Stack
 
@@ -14,7 +13,6 @@
 - Server: nodeJs
 - Server Framework: Express
 - DB: MongoDB
-<br/>
 
 ### Library
 
@@ -34,7 +32,7 @@
 - Lambda
 <br/>
 
-### Issues
+## Issues
 
 #### Launch Screen
 ![splash](https://user-images.githubusercontent.com/31605792/35350273-c9a74c9a-0180-11e8-84cb-5e1cd7c337f1.png)
