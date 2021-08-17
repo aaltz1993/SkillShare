@@ -1,83 +1,46 @@
-### Skillshare 카피 프로젝트
 
-  
+# Skillshare 카피 프로젝트
 
 ### Videos
 [video1](https://www.youtube.com/watch?v=N2Rs-Njy0DI)
 
-
 [video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)  
-  
-
 
 ### Stack
 
 - Language: Java, JavaScript
-
 - OS : Android
-
 - Server: nodeJs
-
 - Server Framework: Express
+- DB: MongoDB
 
-- DB: MongoDB  
-
---------------  
-
+--------------
 ### Library
-
-#### Layout
 
 - CardView
 - RecyclerView
 - Bottom Navigation
 - Toggle Button
 - FlexboxLayout
-
-#### Networking
-
 - Retrofit2 + GsonConverter, RxJava-adapter
 - OkHttp
-
-#### Video
-
 - ExoPlayer
-
-#### SNS-login
-
 - Google login
-
-#### Notifications
-
 - Google Cloud Messaging
-
-#### Image Loading
-
 - Glide
-
-#### Reactive
-
 - RxAndroid2
 - RxBinding2
-
-#### Others
-
-- lambda
+- Lambda
 
 --------------
-
-
 ### Issues
 
 #### Launch Screen
-
 ![splash](https://user-images.githubusercontent.com/31605792/35350273-c9a74c9a-0180-11e8-84cb-5e1cd7c337f1.png)
-#### _issue_
 
+#### _issue_
 - 자동로그인
 - gif 재생  
-
-
 
 #### _How to solve?_
 
