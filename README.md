@@ -1,10 +1,11 @@
 
-# Skillshare 카피 프로젝트
+### Skillshare 카피 프로젝트
 
 ### Videos
-[video1](https://www.youtube.com/watch?v=N2Rs-Njy0DI)
 
-[video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)  
+- [video1](https://www.youtube.com/watch?v=N2Rs-Njy0DI)
+- [video2](https://www.youtube.com/watch?v=bN9aYZA0NYs&feature=youtu.be)  
+<br/>
 
 ### Stack
 
@@ -13,8 +14,8 @@
 - Server: nodeJs
 - Server Framework: Express
 - DB: MongoDB
+<br/>
 
---------------
 ### Library
 
 - CardView
@@ -31,8 +32,8 @@
 - RxAndroid2
 - RxBinding2
 - Lambda
+<br/>
 
---------------
 ### Issues
 
 #### Launch Screen
