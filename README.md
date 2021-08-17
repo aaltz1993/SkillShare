@@ -1,4 +1,4 @@
-# SkillShare 카피 프로젝트
+# Skillshare 카피 프로젝트
 
   
 
