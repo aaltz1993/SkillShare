@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">SkillShare</string>
+    <string name="title_home">Home</string>
+    <string name="groups">Groups</string>
+    <string name="discover">Discover</string>
+    <string name="your_classes">Your Classes</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome to Skillshare</string>
+    <string name="welcome_message">Sign up to access thousands of classes taught by expert practitioners</string>
+    <string name="me">Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="see_all">See All</string>
+    <string name="best_this_month">Best This Month</string>
+    <string name="featured_groups">Featured Groups</string>
+    <string name="title_activity_select_skills">SelectSkillsActivity</string>
+
+    <!-- select skills activity string -->
+    <string name="design">Design</string>
+    <string name="photography">Photography</string>
+    <string name="business">Business</string>
+    <string name="technology">Technology</string>
+    <string name="crafts">Crafts</string>
+    <string name="culinary">Culinary</string>
+    <string name="film">Film</string>
+    <string name="fashion">Fashion</string>
+    <string name="music">Music</string>
+    <string name="lifestyle">Lifestyle</string>
+    <string name="gaming">Gaming</string>
+    <string name="teaching">Teaching</string>
+
+    <!-- view factory title -->
+    <string name="recently_active_groups">Recently Active Groups</string>
+    <string name="trending_classes">Trending Classes</string>
+    <string name="popular_classes">Popular Classes</string>
+    <string name="my_groups">My Groups</string>
+    <string name="feature_on_skillShare">Feature On SkillShare</string>
+    <string name="trending_now">Trending Now</string>
+
+    <!-- sign in activity -->
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="test">
+        We all need a hotel from time to time, one way or another.  We check in, have a shower, sleep and leave. It is mostly enough for most of us to have the rates and the service in a satisfactory fashion, if our neighbors are not noisy.But have you ever thought how hotels emerged? Accommodation is of course a basic need of humanity, as is travelling. But do you know where the first hotel was opened? Or where the word “motel” comes from? Have you ever heard about the celebrities spending a life in hotels? We’ve compiled 10 interesting facts about hotel in this list for you… And of course, don’t forget to visit our list of “Interesting Facts about Hostels” once you finish reading this one… Moreover, the following is a full list of our articles related to hotels and tourism, don’t forget to have a look!
+    </string>
+
+    <!-- sign up activity -->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="policy">By signing up you agree to Skillshare\'s Terms of Service and Privacy Policy</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
+
+    <!-- constant util -->
+    <string name="project">Project</string>
+    <string name="review">Review</string>
+    <string name="subscriber">Subscriber</string>
+    <string name="classes">Class</string>
+
+    <!-- chatting toolgroupItemstems -->
+    <string name="leave_group">Leave Group</string>
+    <string name="create_group">Create a New Group</string>
+    <string name="class_review">Class Reviews</string>
+
+
+</resources>

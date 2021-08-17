@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context="com.immymemine.kevin.skillshare.activity.GroupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/skill_music"
+        android:backgroundTint="#99000000"
+        android:backgroundTintMode="src_over">
+
+        <ImageButton
+            android:id="@+id/toolbar_button_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:tint="@color/colorBottomNavigationActiveColored"
+            app:srcCompat="@drawable/button_back_24dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view_person"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignLeft="@+id/toolbar_title"
+                android:layout_below="@+id/toolbar_title"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_group"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/text_view_member_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_title"
+                android:layout_centerVertical="false"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/image_view_person"
+                android:text="5.4K members"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Illustrators"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_chatting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/recycler_view_item_comment"/>
+
+    <LinearLayout
+        android:id="@+id/layout_frame_discussion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edit_text_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+
+            android:hint="Message (use @username to reply)"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/IcDisabled" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Send"
+            android:textColor="@color/IcActive"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/IcActive"
+        android:text="Join Group"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible" />
+
+
+</LinearLayout>
+

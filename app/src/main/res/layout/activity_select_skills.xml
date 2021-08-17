@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.immymemine.kevin.skillshare.activity.SelectSkillsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select Skills"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/toolbar_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            tools:layout_editor_absoluteX="387dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp"
+            android:paddingRight="2dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_design"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/design"
+                android:textOn="@string/design"
+                android:textSize="18sp"
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_design" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_photography"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/photography"
+                android:textOn="@string/photography"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_photography" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp"
+            android:paddingRight="2dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_business"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/business"
+                android:textOn="@string/business"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_business" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_technology"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/technology"
+                android:textOn="@string/technology"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_technology" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp"
+            android:paddingRight="2dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_crafts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/crafts"
+                android:textOn="@string/crafts"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_crafts" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_culinary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/culinary"
+                android:textOn="@string/culinary"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_culinary"
+                tools:foreground="#64000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp"
+            android:paddingRight="2dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_film"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/film"
+                android:textOn="@string/film"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_film" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_fashion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/fashion"
+                android:textOn="@string/fashion"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_fashion" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp"
+            android:paddingRight="2dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_music"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/music"
+                android:textOn="@string/music"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_music" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_lifestyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/lifestyle"
+                android:textOn="@string/lifestyle"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_lifestyle" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp"
+            android:paddingRight="2dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_gaming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/gaming"
+                android:textOn="@string/gaming"
+                android:textSize="18sp"
+
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_gaming" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:paddingBottom="3dp">
+
+            <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+                android:id="@+id/toggle_teaching"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:scaleType="centerCrop"
+                android:textOff="@string/teaching"
+                android:textOn="@string/teaching"
+                android:textSize="18sp"
+                app:borderWidth="0dp"
+                app:checkedColor="#e5fbba51"
+                app:radius="0dp"
+                app:uncheckedTextColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="#99000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_teaching" />
+        </FrameLayout>
+    </GridLayout>
+</LinearLayout>

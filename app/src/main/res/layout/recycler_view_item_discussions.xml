@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:id="@+id/image_view_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/image_profile" />
+
+    <TextView
+        android:id="@+id/text_view_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Amanda Benett"
+        android:layout_toRightOf="@+id/image_view_profile"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+         />
+
+    <com.immymemine.kevin.skillshare.view.ExpandableTextView
+        android:id="@+id/expandable_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_user_name"
+        android:layout_below="@+id/image_view_profile"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:trimLength="8" />
+
+    <net.colindodd.toggleimagebutton.ToggleImageButton
+        android:id="@+id/image_button_like"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignLeft="@+id/expandable_text_view"
+        android:layout_below="@+id/expandable_text_view"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/colorBottomNavigationNotification"
+        android:checked="false"
+        app:tib_drawable_off="@drawable/heart_disenabled"
+        app:tib_drawable_on="@drawable/heart_enabled" />
+
+    <ImageButton
+        android:id="@+id/image_button_reply"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/expandable_text_view"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/image_button_like"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/chat_balloon" />
+
+    <ImageView
+        android:id="@+id/image_view_like"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/expandable_text_view"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/text_view_like_count"
+        android:tint="@color/BottomNaviNotiBackground"
+        app:srcCompat="@drawable/heart_enabled" />
+
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandable_text_view"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/image_button_reply"
+        android:text="2 months ago"
+        android:textColor="@color/IcInactive"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_view_replies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_button_like"
+        android:layout_below="@+id/image_button_like"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="See all 8 replies"
+        android:textColor="@color/IcActive"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_view_reply_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/text_view_replies"
+        android:layout_below="@+id/text_view_replies"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:srcCompat="@drawable/image_profile" />
+
+    <TextView
+        android:id="@+id/text_view_reply_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_replies"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/image_view_reply_profile"
+        android:text="Amanda Benett"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.immymemine.kevin.skillshare.view.ExpandableTextView
+        android:id="@+id/expandable_text_view_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_reply_profile"
+        android:layout_below="@+id/image_view_reply_profile"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:trimLength="8" />
+
+    <TextView
+        android:id="@+id/text_view_time_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expandable_text_view_reply"
+        android:layout_below="@+id/expandable_text_view_reply"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:text="2 months ago"
+        android:textColor="@color/IcInactive"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/text_view_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/expandable_text_view"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:text="5"
+        android:textColor="@color/IcInactive"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

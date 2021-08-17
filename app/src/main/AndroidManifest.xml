@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.immymemine.kevin.skillshare">
+
+    <!-- gcm permission -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- 메시지 수신과 ID 등록 permission -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- icon 변경 -->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SelectSkillsActivity" />
+        <activity android:name=".activity.SeeAllActivity" />
+        <activity android:name=".activity.SignInActivity" />
+        <activity android:name=".activity.SignUpActivity" />
+        <activity
+            android:name=".activity.ClassActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.GroupActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+
+        <!-- saved Activity -->
+        <activity android:name=".activity.SavedActivity"/>
+
+        <!-- gcm receiver -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.immymemine.kevin.skillshare.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <!-- gcm listener gcm 을 받았을 때 호출되는 리스너 -->
+        <service
+            android:name=".gcm.SkillShareGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- Instance Id 가 변했을 때 호출되는 서비스 -->
+        <service
+            android:name=".gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <!-- 기기별 token( key ) 등록하는 서비스 -->
+        <service
+            android:name=".gcm.RegistrationIntentService"
+            android:exported="false" />
+    </application>
+</manifest>

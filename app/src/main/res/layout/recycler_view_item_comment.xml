@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expandable_text_view"
+        android:layout_below="@+id/expandable_text_view"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="2 months ago"
+        android:textColor="@color/IcInactive"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_view_time"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/text_view_time"
+        android:text="Reply"
+        android:textColor="@color/IcInactive"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_view_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_profile" />
+
+    <TextView
+        android:id="@+id/text_view_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_view_profile"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/image_view_profile"
+        android:text="Amanda Benettio"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_view_user_name"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/text_view_user_name"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <com.immymemine.kevin.skillshare.view.ExpandableTextView
+        android:id="@+id/expandable_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_user_name"
+        android:layout_below="@+id/text_view_user_name"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:trimLength="5"
+        tools:text="test Message test Message test Message test Message test Message test Message test Message test Message test Message test Message " />
+
+</RelativeLayout>
